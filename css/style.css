@@ -120,6 +120,11 @@ button{
   gap: 20px;
 }
 
+.btn-hover{
+  background-color: #000000;
+  color: #fff;
+  font-weight: bold;
+}
 .transparent-txt{
   color: transparent;
   -webkit-background-clip: text;
