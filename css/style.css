@@ -1,22 +1,12 @@
 @font-face {
   font-family: 'Gilroy';
-  src: url('path-to-font/Gilroy-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+  src: url('/css/fonts/Gilroy-Bold.ttf');
 }
+
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('path-to-font/Gilroy-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('path-to-font/Gilroy-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
+  src: url('/css/fonts/Gilroy-Regular.ttf');
 }
 
 *{
@@ -30,11 +20,11 @@ body {
 }
 
 .container{
-  max-width: 1424px;
-  padding: 60px;
+  padding-inline: 60px;
   margin-inline: auto;
   background: linear-gradient(286.93deg, #080B44 6.11%, #1A1D60 98.56%);
   position: relative;
+  overflow: hidden;
   z-index: 1;
 
 }
@@ -57,7 +47,7 @@ body {
 }
 
 .gap,.footer-section{
-  gap: 40px;
+  gap: 30px;
 }
 .text-transform{
   text-transform: capitalize;
@@ -68,6 +58,9 @@ body {
   border: 0;
 }
 
+.position-absolute{
+  position: absolute;
+}
 .header{
   gap: 15px;
 }
@@ -79,16 +72,8 @@ button{
   background: linear-gradient(286.93deg, #EA4040 6.11%, #F5A52D 98.56%);
 }
 
-.section-description{
-  color: #c1bdbd;
-}
-
-.highlight-text{
-  color: #fff;
-}
-
 .widgets-img{
-  max-width: 65px;
+  width: 69px;
 }
 
 .logo{
@@ -97,13 +82,14 @@ button{
 
 .links{
   text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.links:hover{
-  color: rgba(229, 23, 23, 0.895);
-}
 .click-on{
   gap: 74px;
+  font-size:18px;
+  font-weight: bold;
 }
 .btn{
   max-width: 120px;
@@ -120,10 +106,8 @@ button{
   gap: 20px;
 }
 
-.btn-hover{
-  background-color: #000000;
-  color: #fff;
-  font-weight: bold;
+.header-button{
+  gap: 67px;
 }
 .transparent-txt{
   color: transparent;
@@ -132,14 +116,14 @@ button{
   background-clip: text;
 }
 
-.heading{
+.heading {
   font-size: 72px;
   line-height: 84.38px;
   font-weight: bold;
+  margin-bottom: 18px;
 }
 
 .main-txt{
-  max-width: 854px;
   margin-inline: auto;
   padding: 10px;
 }
@@ -147,7 +131,7 @@ button{
 .text{
   font-size: 30px;
   line-height: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 53px;
   font-weight: 400;
 }
 
@@ -175,11 +159,9 @@ button{
 }
 
 .paragraph{
-  font-size: 24px;
   line-height: 28px;
   max-width: 817px;
   text-align: center;
-  font-weight: 300;
   margin-inline: auto;
   margin-bottom: 50px;
 }
@@ -189,14 +171,14 @@ button{
 }
 
 .widget-overview{
-  max-width: 850px;
   box-shadow: 0px 0px 10px 0px #0000001A;
   border: 1.5px solid #FFFFFF26;
   background: linear-gradient(103.46deg, rgba(37, 37, 37, 0.28) 11.66%, rgba(84, 84, 84, 0.17) 87.59%);
   padding: 10px;
   border-radius: 10px;
   margin-inline: auto;
-  margin-top: 40px;
+  margin-top: 200px;
+  position: relative;
 }
 
 .reposnsive-tools{
@@ -216,21 +198,37 @@ button{
 }
 
 .section-title {
-  font-size: 34px;
+  font-size: 56px;
+  font-weight: bold;
 }
 
 .description-text{
-  font-size: 20px;
-  line-height: 23.44px;
+  font-size: 30px;
+  line-height: 33px;
 }
 .tools-overview{
-  gap: 30px;
+  gap: 149px;
+  max-width: 1530px;
+  flex-wrap: nowrap;
 }
 
+.overview{
+  max-width: 1536px;
+  margin-top: 81px;
+  margin-inline: auto;
+  justify-content: center;
+}
+
+.text-color{
+  color: #fff;
+}
 .customer-join-title{
   font-weight: 300;
 }
 
+.paragraph-font-size{
+  font-size: 24px;
+}
 .join-button{
   max-width: 291px;
   padding: 18px 99px;
@@ -241,26 +239,22 @@ button{
 
 .newsletter-section{
   background-color: #fff;
-  max-width: 1424px;
   padding: 60px;
   position: relative;
   text-align: center;
 }
 
 .Subscribe-btn,.email{
-  padding: 10px;
+  padding: 21px 22px;
   border: 1.5px solid #ECECEC;
-  width: 100%;
   border-radius: 40px;
 }
 
 .Subscribe-btn{
-  max-width: 195px;
-  position: absolute;
+  width: 195px;
   right:0;
   border-radius: 40px;
   background-color: #000000;
-  color: #FFFFFF;
 }
 .Subscribe-btn:hover{
   background-color: #EA4040;
@@ -271,15 +265,10 @@ button{
   max-width: 300px;
   margin: auto;
 }
-.user-input input, .user-input button {
-  margin: 5px 0;
-  padding: 10px;
-  font-size: 16px;
-}
 
 .newsletter-heading{
-  max-width: 364px;
   font-size: 64px;
+  font-weight: bold;
   margin-inline: auto;
 }
 
@@ -289,7 +278,6 @@ button{
 
 .footer{
   justify-content: space-around;
-  max-width: 1424px;
   padding: 60px;
   background-color: #000000;
   position: relative;
@@ -310,16 +298,8 @@ button{
 
 .footer-heading{
   font-size: 24px;
-  color: #fff;
-}
-
-.section-circle{
-  position: absolute;
-  left: -187px;
-  top: 255px;
-  z-index: -1;
-  width: 400px;
-  height: 400px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .widget,.user-input{
@@ -387,16 +367,18 @@ button{
   margin-left: auto;
 }
 
-.btn:hover{
-  border-color: #4584E1;
-}
 .tools-container{
-  position: absolute;
   left: 0;
   width: 245px;
   height: 245px;
 }
 
+.right-side-div{
+  right: -110px;
+  bottom: 0;
+  width: 177px;
+  height: 177px;
+}
 .container-bg{
   background: linear-gradient(286.93deg, #EA4040 6.11%, #F5A52D 98.56%);
 }
@@ -410,18 +392,35 @@ button{
   background-color: #3121e7e3;
 }
 
+.copy-right{
+  text-align: center;
+}
+
+.footer-links{
+  font-size: 18px;
+}
+
+.overview-div{
+  position: absolute;
+  right: -50px;
+  top: -167px;
+  z-index: -1;
+}
 @media (max-width:1024){
 
   .tool-step{
     margin: 0 auto;
   }
+
 }
 
 @media (max-width:998px) {
 
   .tools-overview{
     justify-content: center;
+    flex-wrap: wrap;
   }
+  
 
 }
 
@@ -448,6 +447,7 @@ button{
 
   .tools-overview {
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .reposnsive-tools{
@@ -457,16 +457,15 @@ button{
   .footer{
     flex-direction: column;
     gap: 40px;
-    width: 100%;
   }
 
   .widget-overview{
     padding: 30px;
+    position: relative;
   }
 
   .flex-direction{
     flex-direction: column;
-    text-align: center;
   }
 
   .newsletter-heading{
@@ -477,13 +476,13 @@ button{
    right: 0;
   }
 
-  .footer,.copy-right{
+  .footer{
     padding: 30px;
   }
 
   .widget-overview{
     margin-inline: 0;
-    padding: 5px;
+    text-align: center;
   }
 
   .newsletter-section{
@@ -522,6 +521,12 @@ button{
   .click-on{
     gap: 20px;
     justify-content: center;
+  }
+
+  .link-list{
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 103px;
   }
 }
 
