@@ -1,2 +1,1 @@
-# toolify 
-http://toolifysits.netlify.app
+# toolify
