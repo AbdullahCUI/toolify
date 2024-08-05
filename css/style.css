@@ -24,9 +24,8 @@ body {
   margin-inline: auto;
   background: linear-gradient(286.93deg, #080B44 6.11%, #1A1D60 98.56%);
   position: relative;
+  z-index: 99;
   overflow: hidden;
-  z-index: 1;
-
 }
 
 .flex{
@@ -81,26 +80,27 @@ button{
   max-width: 167px;
 }
 
-.header-__nav-link{
+.links{
   text-decoration: none;
   font-size: 18px;
-  font-weight: bold;
-}
+ }
 
+ .bold{
+  font-weight: bold;
+ }
 .click-on{
   gap: 74px;
-  font-size:18px;
-  font-weight: bold;
 }
 .buttons{
   border: 0;
   border-radius: 50px;
   padding: 9px 28px;
-  font-weight: bold;
 }
 
-.buttons--sign-in{
+.sing-in-btn{
   border: 0;
+  background-color: 0;
+  background: 0;
 }
 
 .buttons{
@@ -119,14 +119,8 @@ button{
 
 .main-txt__heading {
   font-size: 72px;
-  line-height: 84.38px;
-  font-weight: bold;
+  line-height: 1.16;
   margin-bottom: 18px;
-}
-
-.main-txt{
-  margin-inline: auto;
-  padding: 10px;
 }
 
 .text{
@@ -137,7 +131,6 @@ button{
 }
 
 .Browse-buttons{
-  max-width: 318px;
   padding: 18px 56px;
 }
 
@@ -152,6 +145,7 @@ button{
 
 .widget-offer{
   gap: 10px;
+  margin-bottom: 107px;
 }
 
 .main-txt__heading-txt{
@@ -175,16 +169,22 @@ button{
   box-shadow: 0px 0px 10px 0px #0000001A;
   border: 1.5px solid #FFFFFF26;
   background: linear-gradient(103.46deg, rgba(37, 37, 37, 0.28) 11.66%, rgba(84, 84, 84, 0.17) 87.59%);
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   margin-inline: auto;
   margin-top: 200px;
   position: relative;
+  margin-right: 140px;
+  margin-left: 50px;
+
 }
 
 .reposnsive-tools{
   flex-direction: column;
   gap: 40px;
+  max-width: 1424px;
+  margin: 0 auto;
+  padding: 60px;
   margin-top: 115px;
 }
 
@@ -193,19 +193,21 @@ button{
   text-align: center;
 }
 
-.setup-main-txt__heading{
+.secondary-heading{
   font-size: 28px;
   margin-bottom: 30px;
 }
 
 .section-title {
   font-size: 56px;
-  font-weight: bold;
+  line-height: 70px;
+  text-align: center;
+  margin-bottom: 18px;
 }
 
 .description-text{
   font-size: 30px;
-  line-height: 33px;
+  line-height: 1.2;
 }
 .tools-overview{
   gap: 149px;
@@ -228,11 +230,12 @@ button{
   font-size: 24px;
 }
 .join-button{
-  max-width: 291px;
   padding: 18px 99px;
   border: 0;
   border-radius: 40px;
   background-color: #F5A52D;
+  margin-bottom: 234px;
+  margin-top: 66px;
 }
 
 .newsletter-section{
@@ -264,9 +267,8 @@ button{
   margin: auto;
 }
 
-.newsletter-main-txt__heading{
+.newsletter-heading{
   font-size: 64px;
-  font-weight: bold;
   margin-inline: auto;
 }
 
@@ -290,15 +292,9 @@ button{
   color:#FFF;
 }
 
-.office-map{
-  max-width: 250px;
-  height: 200px;
-}
-
 .footer-main-txt__heading{
   font-size: 24px;
   line-height: 26px;
-  font-weight: bold;
 }
 
 .widget,.user-input{
@@ -352,8 +348,9 @@ button{
 }
 
 .join-buttons-div{
-  margin-right: auto;
-  margin-left: 0;
+  position: absolute;
+  bottom: 190px;
+  left: 248px;
 }
 
 .newsletter-container{
@@ -363,6 +360,7 @@ button{
 
 .newsletter-empty-div{
   margin-left: auto;
+  margin-right: 260px;
 }
 
 .tools-container{
@@ -372,7 +370,7 @@ button{
 }
 
 .right-side-div{
-  right: -110px;
+  right: -60px;
   bottom: 0;
   width: 177px;
   height: 177px;
@@ -392,21 +390,20 @@ button{
 
 .copy-right{
   text-align: center;
+  margin-top: 32px;
 }
 
-.footer-header__menu-link{
-  font-size: 18px;
-}
 
 .tool-div-2{
   visibility: hidden;
 }
 .overview-div{
   position: absolute;
-  right: -50px;
-  top: -167px;
+  right: -175px;
+  top: -350px;
   z-index: -1;
-  animation-duration: 10s
+  width: 498px;
+  height: 498px;
 }
 
 .section-description{
@@ -417,12 +414,42 @@ button{
   font-size: 24px;
 }
 
-@media (max-width:1024){
+.main-txt{
+  max-width: 1000px;
+}
 
-  .tool-step{
-    margin: 0 auto;
+.hero{
+  margin-top: 180px;
+  margin-left: 50px;
+}
+
+.hero__text{
+  max-width: 706px;
+  line-height: 1.2;
+}
+
+.smart-tools{
+  text-align: center;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.smart-tool-direction{
+  flex-direction: column;
+}
+@media (max-width:1424){
+
+  .hero,.widget-overview{
+    margin-left: 50px;
   }
 
+  .overview-div{
+    right: -100px;
+    top: -150px;
+    width: 250px;
+    height: 250px;
+  }
 }
 
 @media (max-width:998px) {
@@ -430,6 +457,12 @@ button{
   .tools-overview{
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .overview-div{
+    right: -100px;
+    top: -150px;
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -441,6 +474,13 @@ button{
     padding: 30px;
   }
 
+  .overview-div{
+    right: -120px;
+    top: -300px;
+    width: 240px;
+    height: 240px;
+    margin-top: 200px;
+  }
   .main-txt{
     text-align: center;
   }
@@ -450,18 +490,16 @@ button{
   }
 
   .main-txt__heading{
+    margin: 0 auto;
+    max-width: 330px;
     font-size: 48px;
     line-height: 40px;
     margin-bottom: 40px;
   }
 
-  .tools-overview {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
   .reposnsive-tools{
     text-align: center;
+    padding: 0;
   }
 
   .footer{
@@ -469,29 +507,27 @@ button{
     gap: 40px;
   }
   .widget-overview{
-    padding: 30px;
     position: relative;
+    margin-inline: 0;
+    text-align: center;
+    padding: 0;
   }
 
   .flex-direction{
     flex-direction: column;
   }
 
-  .newsletter-main-txt__heading{
+  .newsletter-heading{
     font-size: 48px;
   }
 
   .empty-container{
-   right: 0;
+    margin-right: auto;
+    margin-left: 50px;
   }
 
   .footer{
     padding: 30px;
-  }
-
-  .widget-overview{
-    margin-inline: 0;
-    text-align: center;
   }
 
   .newsletter-section{
@@ -519,19 +555,15 @@ button{
     margin:30px;
   }
 
-  .office-map{
-    width: 100%;
-  }
-
   .transparent-color-div{
     margin-left: 0;
     filter: blur(1px);
     position: absolute;
-    left: -27px;
-    bottom: -148px;
+    left: -132px;
+    bottom: -118px;
     width: 200px;
     height: 200px;
-    z-index: -2;
+    z-index: -1;
   }
 
   .click-on{
@@ -543,6 +575,7 @@ button{
     flex-wrap: nowrap;
     align-items: flex-start;
     gap: 103px;
+    overflow: hidden;
   }
 
   .tool-div{
@@ -551,7 +584,6 @@ button{
 
   .tool-div-2{
     margin-right: auto;
-    margin-left: 300px;
     visibility: visible;
   }
 
@@ -569,6 +601,28 @@ button{
 
   .tools-overview{
     gap: 58px;
+    max-width: 100%;
+  }
+
+  .hero-div{
+    margin-bottom: 40px;
+    filter: blur(10px);
+  }
+
+  .hero{
+    margin-top: 121px;
+    margin-left: 0;
+  }
+
+  .widget-primary-div{
+    padding: 10px;
+  }
+
+  .widget-offer{
+    padding: 10px;
+  }
+  
+  .widget{
+    padding: 0;
   }
 }
-
