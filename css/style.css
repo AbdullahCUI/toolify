@@ -69,13 +69,10 @@ body {
   gap: 478px;
 }
 
-.header__links{
-  gap: 74px;
-}
-
 button{
   cursor: pointer;
 }
+
 .button__bg{
   background: linear-gradient(286.93deg, #EA4040 6.11%, #F5A52D 98.56%);
 }
@@ -248,7 +245,7 @@ button{
 
 .newsletter-section{
   background-color: #fff;
-  padding: 60px;
+  padding: 134px 0 163px 0;
   position: relative;
   text-align: center;
 }
@@ -338,7 +335,7 @@ button{
 
 .left-blure-container{
   bottom: 644px;
-  right: 633px;
+  right: 656px;
 }
 
 .blure-container{
@@ -353,7 +350,7 @@ button{
 }
 
 .tool-div{
-  left: 314px;
+  left: 374px;
 }
 
 .join-buttons-div{
@@ -368,13 +365,18 @@ button{
 }
 
 .newsletter-empty-div{
-  margin-left: auto;
-  margin-right: 260px;
+  position: absolute;
+  top: 81px;
+  right: 516px;
+  width: 38px;
+  height: 38px;
 }
 
 .tools-container{
   width: 285px;
   height: 285px;
+  left: -400px;
+  bottom: -431px;
 }
 
 .right-side-div{
@@ -419,13 +421,10 @@ button{
   font-size: 24px;
 }
 
-.main-txt{
-  max-width: 1000px;
-}
-
 .hero{
-  margin-top: 307px;
-  margin-left: 278px;
+  max-width: 1364px;
+  margin: 0 auto;
+  margin-top: 184px;
   position: relative;
 }
 
@@ -470,32 +469,17 @@ button{
 .customer-count{
   margin-top: 249px;
 }
-@media (max-width:1424){
 
-  .hero,.widget-overview{
-    margin-left: 50px;
-  }
-
-  .overview-div{
-    right: -100px;
-    top: -150px;
-    width: 250px;
-    height: 250px;
-  }
+.secondary-shape{
+  left: -101px;
+  bottom: -101px;
 }
 
-@media (max-width:998px) {
-
-  .tools-overview{
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .overview-div{
-    right: -100px;
-    top: -150px;
-    width: 250px;
-    height: 250px;
-  }
+.tools-2{
+  right: -50px;
+  bottom: -50px;
+  width: 177px;
+  height: 177px;
 }
 
 @media (max-width:768px){
@@ -538,12 +522,6 @@ button{
     flex-direction: column;
     gap: 40px;
   }
-  .widget-overview{
-    position: relative;
-    margin-inline: 0;
-    text-align: center;
-    padding: 0;
-  }
 
   .flex-direction{
     flex-direction: column;
@@ -553,17 +531,8 @@ button{
     font-size: 48px;
   }
 
-  .small__shape{
-    margin-right: auto;
-    margin-left: 50px;
-  }
-
   .footer{
     padding: 30px;
-  }
-
-  .newsletter-section{
-    padding: 0;
   }
 
   .widget{
@@ -578,24 +547,13 @@ button{
     font-size: 48px;
   }
 
-  .tool-div{
-    margin-right: auto;
-  }
-
   .newsletter-empty-div{
-    margin-inline: auto;
-    margin:30px;
+    left: 137px;
+    top: 37px;
   }
 
   .transparent-color-div{
-    margin-left: 0;
-    filter: blur(1px);
-    position: absolute;
-    left: -132px;
-    bottom: -118px;
-    width: 200px;
-    height: 200px;
-    z-index: -1;
+    visibility: hidden;
   }
 
   .click-on{
@@ -610,15 +568,6 @@ button{
     overflow: hidden;
   }
 
-  .tool-div{
-    visibility: hidden;
-  }
-
-  /* .tool-div-2{
-    margin-right: auto;
-    visibility: visible;
-  } */
-
   .tools-section-title{
     font-size: 48px;
   }
@@ -629,17 +578,17 @@ button{
 
   .tools-overview{
     gap: 58px;
-    max-width: 100%;
+    flex-direction: column;
   }
 
   .hero-div{
-    margin-bottom: 40px;
-    filter: blur(10px);
+    right: 277px;
+    top: -78px;
   }
 
   .hero{
     margin-top: 121px;
-    margin-left: 0;
+    text-align: center;
   }
 
   .widget-primary-div{
@@ -654,9 +603,18 @@ button{
    max-width: 750px;
   }
 
-  .newsletter-container {
-    bottom: -159px;
-    left: -165px;
+  .tools-container{
+    left: -161px;
+    bottom: -200px;
     z-index: -1;
+}
+
+.header,.links-gap{
+  flex-direction: column;
+  gap: 0;
+}
+
+.header{
+  gap: 70px;
 }
 }
