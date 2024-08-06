@@ -9,44 +9,47 @@
 <body>
   <div class="container">
 
-    <header class="flex align-items justify-content header">
+    <div class="flex align-items justify-content header">
 
-      <img src="/assets/brand-logo.png" class="logo" alt="logo">
+      <div class="flex links-gap align-items">
+        <a href="#"><img src="/assets/brand-logo.png" class="logo" alt="brand-logo"></a>
 
-      <nav class="header__nav_list flex click-on flex text-transform click-on flex text-transform">
-        <a href="#" class="links text-color bold">widgets</a>
-        <a href="#" class="links text-color bold">cateogeries</a>
-        <a href="#" class="links text-color bold">help</a>
-      </nav>
+        <ul class="flex link-list text-transform header__links">
+          <li><a href="#" class="links text-color bold">widgets</a></li>
+          <li><a href="#" class="links text-color bold">cateogeries</a></li>
+          <li><a href="#" class="links text-color bold">help</a></li>
+        </ul>
 
-      <div class="buttons header-button flex align-items text-transform">
-        <button class="sing-in-btn section-description text-color">sign in</button>
+      </div>
+
+      <div class="header-button flex align-items">
+        <button class="buttons sign-in-btn section-description text-color">sign in</button>
         <button class="buttons button__bg text-color section-description bold">sign up</button>
       </div>
 
-    </header>
-
+    </div>
 
     <section class="hero">
 
-        <div class="empty-container empty-container-bg border-radius left-blure-container blure-container hero-div"></div>
+        <div class="small__shape small__shape-bg border-radius left-blure-container blure-container hero-div button__bg"></div>
 
-        <div class="main-txt">
-          <h1 class="main-txt__heading text-color bold">Use best <span class="transparent-txt button__bg bold">online widgets</span> without any hassel.
+        <!-- <div class="main-txt"> -->
+          <h1 class="heading text-color bold">Use best <span class="transparent-txt button__bg bold">online widgets</span> without any hassel.
           </h1>
 
-          <p class="text section-description text-color description-text hero__text">
+          <p class="text section-description text-color hero__text">
             Toolify widgets help 1,000,000+ website owners to increase sales, engage visitors, collect leads and more.
             Save your time and money with ready-to-use solutions and grow your business faster!
           </p>
 
           <button class="button__bg Browse-buttons buttons text-color paragraph-font-size bold">Browse all widgets</button>
-        </div>
-        
+        <!-- </div> -->
+
       </section>
 
       <section class="widget-overview">
-        <div class="empty-container-bg border-radius overview-div"></div>
+         <div class="small__shape-bg border-radius overview-div"></div>
+         <div class="small__shape border-radius left-blure-container blure-container transparent-color-div"></div>
 
         <div class="widget-primary-div">
           <div class="widget-offer flex">
@@ -56,56 +59,50 @@
           </div>
 
         <div class="widget-description">
-          <h2 class="transparent-txt button__bg main-txt__heading-txt bold">Toolify widgets</h2>
+          <h2 class="transparent-txt button__bg widget-heading bold">Toolify widgets</h2>
           <p class="paragraph paragraph-font-size text text-color">We offer the best free and premium widgets/plugins, which help increase user engagement, collect more leads and grow your sales.</p>
         </div>
 
-        <div class="flex align-items justify-content widget gap">
-          <div class="flex align-items buttons flex-direction">
+        <div class="flex align-items justify-content widget">
+          <div class="flex align-items flex-direction gap">
             <img src="./assets/widgets/social.png" class="widgets-img" alt="social widgets">
             <p class="text-color paragraph-font-size">Social widgets</p>
           </div>
 
-          <div class="flex align-items buttons flex-direction">
+          <div class="flex align-items flex-direction gap">
             <img src="./assets/widgets/ecommerce.png" class="widgets-img" alt="Ecommerce-widgets">
             <p class="text-color paragraph-font-size">Ecommerce widgets</p>
           </div>
 
-          <div class="flex align-items buttons flex-direction">
+          <div class="flex align-items flex-direction gap">
             <img src="./assets/widgets/form.png" class="widgets-img" alt="Form-widgets">
             <p class="text-color paragraph-font-size">form widgets</p>
           </div>
 
-          <div class="flex align-items buttons flex-direction">
+          <div class="flex align-items flex-direction gap">
             <img src="./assets/widgets/Support.png" class="widgets-img" alt="business widgets">
             <p class="text-color paragraph-font-size">business widgets</p>
           </div>
 
-          <div class="flex align-items buttons flex-direction">
+          <div class="flex align-items flex-direction gap">
             <img src="/assets/widgets/Business.png" class="widgets-img" alt="support-widgets">
             <p class="text-color paragraph-font-size">support-widgets</p>
           </div>
         </div>
         </div>
-
-
-        <div class="empty-container empty-container-bg border-radius left-blure-container blure-container transparent-color-div"></div>
+        <div class="newsletter-container small__shape-bg border-radius tools-container position-absolute container-bg"></div>
       </section>
 
+     <section class="flex align-items reposnsive-tools flex-direction">
 
-    <section class="flex align-items reposnsive-tools flex-direction">
+      <div class="small__shape small__shape-bg border-radius position-absolute blure-container tool-div"></div>
+      <div class="small__shape small__shape-bg border-radius left-blure-container position-absolute blure-container"></div>
 
-      <div class="empty-container empty-container-bg border-radius left-blure-container blure-container tool-div"></div>
-
-      <div class="newsletter-container empty-container-bg border-radius tools-container position-absolute container-bg"></div>
-
-      <div class="smart-tools flex-direction flex align-items">
+      <div class="smart-tools">
         <div class="flex align-items smart-tool-direction">
-          <h2 class="section-title text-color bold">Smart reposnsive tools</h2>
-          <p class="tex-size description-text text-color">Save your time. Our widgets will help you in your daily tasks.</p>
+          <h2 class="tools-section-title text-color bold">Smart responsive tools</h2>
+          <p class="font__size-24 description-text text-color tool__section-txt">Save your time. Our widgets will help you in your daily tasks.</p>
         </div>
-
-        <div class="empty-container empty-container-bg border-radius left-blure-container blure-container tool-div tool-div-2"></div>
 
           <div class="flex tools-overview">
             <div class="tool-step">
@@ -125,30 +122,28 @@
         </div>
       </div>
 
-      <div class="empty-container empty-container-bg border-radius left-blure-container blure-container"></div>
-
-      <div class="smart-tools flex">
+      <div class="smart-tools customer-count">
 
         <div class="flex smart-tool-direction align-items">
-          <h3 class="section-title text-color bold">Join 1,078,753 customers already using Toolify</h3>
-          <p class="text-color tex-size">Get the taste of 50+ powerful apps by Toolify. Joining is free!</p>
+          <h3 class="tools-section-title text-color bold">Join 1,078,753 customers already using Toolify</h3>
+          <p class="text-color font__size-24">Get the taste of 50+ powerful apps by Toolify. Joining is free!</p>
         </div>
         <button class="join-button paragraph-font-size bold">Get start</button>
 
-        <div class="newsletter-container empty-container-bg border-radius right-side-div position-absolute container-bg"></div>
+        <div class="newsletter-container small__shape-bg border-radius right-side-div position-absolute container-bg"></div>
       </div>
     </section>
 
-    <div class="empty-container empty-container-bg border-radius left-blure-container blure-container join-buttons-div"></div>
+    <div class="small__shape small__shape-bg border-radius blure-container join-buttons-div"></div>
 
   </div>
 
   <section class="newsletter-section">
 
-    <div class="empty-container empty-container-bg border-radius left-blure-container newsletter-empty-div"></div>
+    <div class="small__shape small__shape-bg border-radius left-blure-container newsletter-empty-div"></div>
 
     <h3 class="newsletter-heading bold">Newsletter</h3>
-    <p class="paragraph tex-size newsletter-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor, in mauris bibendum commodo. </p>
+    <p class="paragraph font__size-24 newsletter-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor, in mauris bibendum commodo. </p>
 
 
       <form class="user-input">
@@ -156,7 +151,7 @@
         <button type="submit" class="Subscribe-buttons position-absolute buttons-hover text-color">Subscribe</button>
       </form>
 
-     <div class="newsletter-container container-width empty-container-bg border-radius"></div>
+     <div class="newsletter-container container-width small__shape-bg border-radius"></div>
 
   </section>
 
@@ -164,7 +159,7 @@
 
     <div class="flex justify-content link-list flex-direction">
       <div class="flex footer-section flex-direction text-color">
-        <h3 class="footer-main-txt__heading text-color bold">Widgets</h3>
+        <h3 class="footer-heading text-color bold">Widgets</h3>
           <a href="#" class="links">Our company</a>
           <a href="#" class="links">Our goal</a>
           <a href="#" class="links">Inspiration</a>
@@ -174,7 +169,7 @@
       </div>
 
       <div class="flex footer-section flex-direction text-color">
-        <h3 class="footer-main-txt__heading text-color bold">Plans</h3>
+        <h3 class="footer-heading text-color bold">Plans</h3>
         <a href="#" class="links">Yearly</a>
         <a href="#" class="links">Monthly</a>
         <a href="#" class="links">One time</a>
@@ -182,7 +177,7 @@
       </div>
 
       <div class="flex footer-section flex-direction text-color">
-        <h3 class="footer-main-txt__heading text-color bold">About us</h3>
+        <h3 class="footer-heading text-color bold">About us</h3>
         <a href="#" class="links">Our company</a>
         <a href="#" class="links">Our goal</a>
         <a href="#" class="links">Inspiration</a>
@@ -192,12 +187,12 @@
       </div>
 
       <div class="flex footer-section flex-direction text-color">
-        <h3 class="footer-main-txt__heading text-color bold">Office</h3>
+        <h3 class="footer-heading text-color bold">Office</h3>
         <a href="#" class="links">4139 Rhode Island Avenue</a>
         <a href="#" class="links">Washington DC</a>
         <a href="Inspiration" class="links">202-399-2897</a>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13300.68494999366!2d73.12009159155001!3d33.54892700686583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfed061bb8314d%3A0x887fee91733548aa!2sBahria%20Town%20Phase%20IV%20Phase%204%20Bahria%20Town%2C%20Rawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1722352381472!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="office-map"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13300.68494999366!2d73.12009159155001!3d33.54892700686583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfed061bb8314d%3A0x887fee91733548aa!2sBahria%20Town%20Phase%20IV%20Phase%204%20Bahria%20Town%2C%20Rawalpindi%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1722352381472!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="office-map"></iframe>
 
       </div>
     </div>
