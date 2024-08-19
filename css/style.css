@@ -27,6 +27,8 @@ body {
   position: relative;
   z-index: 99;
   overflow: hidden;
+  max-width: 1920px;
+  max-width: 100%;
 }
 
 .flex{
@@ -49,6 +51,7 @@ body {
 .gap,.footer-section{
   gap: 30px;
 }
+
 .text-transform{
   text-transform: capitalize;
 }
@@ -63,10 +66,12 @@ body {
 }
 .header{
   justify-content: space-between;
+  max-width: 1920px;
+  max-width: 100%;
 }
 
-.links-gap{
-  gap: 478px;
+.header ul li a:hover {
+ color: #656262;
 }
 
 button{
@@ -93,8 +98,13 @@ button{
  .link-list{
   list-style: none;
  }
+
  .bold{
   font-weight: bold;
+ }
+
+ .header__links{
+  gap: 30px;
  }
 
 .buttons{
@@ -104,15 +114,21 @@ button{
 }
 
 .sign-in-btn{
-  background-color: 0;
   background: 0;
+  transition: all 0.3s ease-in;
 }
 
 .sign-in-btn:hover{
-  border: 2px solid #fff;
-  background-color: #000000;
+  background: transparent;
+  border: 1px solid gray;
 }
 
+.sign-up{
+  transition: all 0.3s ease-in;
+}
+.sign-up:hover{
+  background: #2f3847;
+}
 .header-button{
   gap: 38px;
 }
@@ -140,6 +156,13 @@ button{
 
 .Browse-buttons{
   padding: 18px 56px;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.Browse-buttons:hover{
+  background: transparent;
+  border: 1px solid rgb(74, 74, 23);
 }
 
 .circle-shape{
@@ -173,7 +196,8 @@ button{
 }
 
 .widget-overview{
-  max-width: 1364px;
+  max-width: 1920px;
+  max-width: 100%;
   box-shadow: 0px 0px 10px 0px #0000001A;
   border: 1.5px solid #FFFFFF26;
   background: linear-gradient(103.46deg, rgba(37, 37, 37, 0.28) 11.66%, rgba(84, 84, 84, 0.17) 87.59%);
@@ -187,7 +211,8 @@ button{
 .reposnsive-tools{
   flex-direction: column;
   gap: 40px;
-  max-width: 1424px;
+  max-width: 1920px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 60px;
   margin-top: 223px;
@@ -240,14 +265,22 @@ button{
   border: 0;
   border-radius: 40px;
   background-color: #F5A52D;
-  margin-top: 66px;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+  color: #000000;
 }
 
+.join-button:hover{
+  background: #000000;
+  color: #FFF;
+}
 .newsletter-section{
   background-color: #fff;
   padding: 134px 0 163px 0;
   position: relative;
   text-align: center;
+  max-width: 1920px;
+  max-width: 100%;
 }
 
 .Subscribe-buttons,.email{
@@ -282,7 +315,8 @@ button{
 }
 
 .footer{
-  justify-content: space-around;
+  max-width: 1920px;
+  max-width: 100%;
   padding: 60px;
   background-color: #000000;
   position: relative;
@@ -294,6 +328,10 @@ button{
 .footer-section a{
   text-decoration: none;
   color:#FFF;
+}
+
+.footer-section a:hover{
+  color: rgb(179, 179, 179);
 }
 
 .footer-heading{
@@ -422,7 +460,8 @@ button{
 }
 
 .hero{
-  max-width: 1364px;
+  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   margin-top: 184px;
   position: relative;
@@ -451,6 +490,7 @@ button{
 .smart-tool-direction{
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 64px;
 }
 
 .office-map{
@@ -609,7 +649,7 @@ button{
     z-index: -1;
 }
 
-.header,.links-gap{
+.header{
   flex-direction: column;
   gap: 0;
 }
