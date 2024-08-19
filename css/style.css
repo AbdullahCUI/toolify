@@ -537,12 +537,13 @@ button{
     height: 240px;
     margin-top: 200px;
   }
+
   .main-txt{
     text-align: center;
   }
 
   .Browse-buttons{
-    width: 100%;
+    padding: 18px;
   }
 
   .heading{
